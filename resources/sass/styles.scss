@@ -1,0 +1,18 @@
+// VARIABLES
+    // Typography
+$primary-font: 'Spartan', sans-serif;
+$default-font-size: 16px;
+
+    // Breakpoints
+$media-breakpoint-xs :575px;
+$media-breakpoint-sm :767px;
+$media-breakpoint-md :991px;
+$media-breakpoint-lg :1199px;
+$media-breakpoint-xl :1399px;
+
+    // Menu
+.site-header {
+    .navbar-brand-logo {
+        height: 35px;
+    }
+}
