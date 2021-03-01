@@ -10,6 +10,9 @@ $media-breakpoint-md :991px;
 $media-breakpoint-lg :1199px;
 $media-breakpoint-xl :1399px;
 
+body {
+    font: 16px/1.7 $primary-font;
+}
     // Menu
 .site-header {
     .navbar-brand-logo {
