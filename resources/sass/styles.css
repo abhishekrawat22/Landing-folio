@@ -2,7 +2,101 @@ body {
   font: 16px/1.7 "Spartan", sans-serif;
 }
 
+.site-header {
+  left: 0;
+  right: 0;
+  top: 0;
+  -webkit-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+
 .site-header .navbar-brand-logo {
   height: 35px;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #183b56;
+}
+
+.site-header .btn {
+  border-radius: .45rem;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.site-header .btn:hover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.site-header .btn-transparent {
+  border-color: #183b56;
+  color: #183b56;
+}
+
+.site-header .btn-transparent:hover {
+  background-color: #183b56;
+  color: #fff;
+}
+
+.site-header .btn-pro {
+  background-color: #fc6666;
+  border-color: #fc6666;
+  color: #fff;
+}
+
+.site-header .btn-pro:hover {
+  background-color: #fb4040;
+}
+
+.site-header .navbar-toggler {
+  border-color: rgba(23, 31, 56, 0.1);
+  border-radius: .45rem;
+  color: #183b56;
+  padding: .75rem;
+}
+
+.site-header .navbar-toggler:focus {
+  border: solid 4px #183b56;
+}
+
+.site-header .navbar-toggler .navbar-toggler-icon {
+  height: auto;
+  vertical-align: middle;
+}
+
+.nav-on-scroll {
+  background-color: #183b56;
+  z-index: 1;
+}
+
+.nav-on-scroll .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.nav-on-scroll .navbar-toggler {
+  border-color: transparent;
+  color: #fff;
+}
+
+.nav-on-scroll .navbar-toggler:focus {
+  border: none;
+}
+
+.nav-on-scroll .btn-transparent {
+  border-color: #fff;
+  color: #fff;
+}
+
+.nav-on-scroll .btn-transparent:hover {
+  background-color: #fff;
+  color: #183b56;
+}
+
+.site-banner {
+  padding: 160px 0 170px;
 }
 /*# sourceMappingURL=styles.css.map */

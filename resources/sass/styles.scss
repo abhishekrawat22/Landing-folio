@@ -10,12 +10,111 @@ $media-breakpoint-md :991px;
 $media-breakpoint-lg :1199px;
 $media-breakpoint-xl :1399px;
 
+    // Colors
+$primary-color: #183b56;
+$secondary-color: #424767;
+$text-white: #fff;
+$bg-btn-pro: #fc6666;
+$bg-btn-pro-hover: #fb4040;
+
 body {
     font: 16px/1.7 $primary-font;
 }
     // Menu
 .site-header {
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: top 0.3s ease;
     .navbar-brand-logo {
         height: 35px;
     }
+
+    .navbar-nav {
+        .nav-link {
+            color: $primary-color;
+        }
+    }
+
+    .btn {
+        border-radius: .45rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+
+        &:hover {
+            transition: all 0.2s ease;
+            transform: translateY(-2px);
+        }
+    }
+
+    .btn-transparent {
+        border-color: $primary-color;
+        color: $primary-color;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $text-white;
+        }
+    }
+
+    .btn-pro {
+        background-color: $bg-btn-pro;
+        border-color: $bg-btn-pro;
+        color: $text-white;
+
+        &:hover {
+            background-color: $bg-btn-pro-hover;
+        }
+    }
+
+    .navbar-toggler {
+        border-color: rgba(23,31,56,.1);
+        border-radius: .45rem;
+        color: $primary-color;
+        padding: .75rem;
+
+        &:focus {
+            border: solid 4px $primary-color;
+        }
+
+        .navbar-toggler-icon {
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+}
+
+// Navbar CSS when scrolled
+.nav-on-scroll {
+    background-color: $primary-color;
+    z-index: 1;
+
+    .navbar-nav {
+        .nav-link {
+            color: $text-white;
+        }
+    }
+
+    .navbar-toggler {
+        border-color: transparent;
+        color: $text-white;
+
+        &:focus {
+            border: none;
+        }
+    }
+
+    .btn-transparent {
+        border-color: $text-white;
+        color: $text-white;
+
+        &:hover {
+            background-color: $text-white;
+            color: $primary-color;
+        }
+    }
+}
+
+.site-banner {
+    padding: 160px 0 170px;
 }

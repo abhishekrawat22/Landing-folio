@@ -20,33 +20,35 @@
 </head>
 
 <body>
-	<header class="site-header">
+	<header class="site-header position-fixed" id="head">
 		<nav class="container navbar navbar-expand-lg">
-			<a href="index.html" class="navbar-brand">
+			<a href="index.html" class="navbar-brand mb-2 mr-4">
 				<img src="./resources/images/logo.svg" alt="Swipe Company Logo - a right hand swiping with index finger"
 					class="navbar-brand-logo" />
 			</a>
-			<button class="navbar-toggler" type="button">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link pr-3" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link pr-3" href="#testimonials">Testimonials</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link pr-3" href="#faq">FAQ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#download">Download</a>
+					</li>
+				</ul>
+			</div>
+			<div class="d-flex align-items-center justify-content-center ml-auto">
+				<button type="button" class="btn btn-transparent d-none d-md-inline py-2 mr-3">Free download</button>
+				<button type="button" class="btn btn-pro d-none d-md-inline py-2">Upgrade to Pro <i class="fa fa-rocket ml-2"></i></button>
+			</div>
+			<button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
 			</button>
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Testimonials</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">FAQ</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Download</a>
-				</li>
-			</ul>
-			<div class="d-flex align-items-center justify-content-center">
-				<button type="button" class="btn btn-transparent d-none d-md-inline">Free downlaod</button>
-				<button type="button" class="btn btn-pro d-none d-md-inline">Upgrade to Pro</button>
-			</div>
 		</nav>
 	</header>
 	<main>
@@ -60,7 +62,7 @@
 							<a href="#" class="btn btn-dark btn-download-app mb-xl-0 mr-2 mr-md-3">
 								<span class="d-flex align-items-center">
 									<span class="icon icon-brand mr-2 mr-md-3">
-										<span class="fab fa-apple"></span>
+										<span class="fa fa-apple"></span>
 									</span>
 									<span class="d-inline-block text-left">
 										<small class="font-weight-normal d-none d-md-block">Available on</small> App Store
@@ -341,7 +343,7 @@
 							<div class="card">
 								<div class="card-header" id="headingOne">
 									<h2 class="mb-0">
-										<button class="btn btn-link btn-block collapsed d-flex justify-content-between text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+										<button class="btn btn-link btn-block collapsed d-flex justify-content-between text-dark text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 											What is the purpose of a FAQ?
 											<i class="fa fa-plus"></i>
 										</button>
@@ -359,7 +361,7 @@
 							<div class="card">
 								<div class="card-header" id="headingTwo">
 									<h2 class="mb-0">
-										<button class="btn btn-link btn-block collapsed d-flex justify-content-between text-dark" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										<button class="btn btn-link btn-block collapsed d-flex justify-content-between text-dark text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 											What is a FAQ document?
 											<i class="fa fa-plus"></i>
 										</button>
@@ -377,7 +379,7 @@
 							<div class="card">
 								<div class="card-header" id="headingThree">
 									<h2 class="mb-0">
-										<button class="btn btn-link btn-block collapsed d-flex justify-content-between text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<button class="btn btn-link btn-block collapsed d-flex justify-content-between text-dark text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 											What are the top 10 interview questions?
 											<i class="fa fa-plus"></i>
 										</button>
@@ -395,7 +397,7 @@
 							<div class="card">
 								<div class="card-header" id="headingThree">
 									<h2 class="mb-0">
-										<button class="btn btn-link btn-block collapsed d-flex justify-content-between text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<button class="btn btn-link btn-block collapsed d-flex justify-content-between text-dark text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 											Cookies?
 											<i class="fa fa-plus"></i>
 										</button>
@@ -413,7 +415,7 @@
 							<div class="card">
 								<div class="card-header" id="headingThree">
 									<h2 class="mb-0">
-										<button class="btn btn-link btn-block collapsed d-flex justify-content-between text-dark" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<button class="btn btn-link btn-block collapsed d-flex justify-content-between text-dark text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 											Copyright Notice
 											<i class="fa fa-plus"></i>
 										</button>
@@ -433,7 +435,122 @@
 					</div>
 				</div>
 		</section>
+		<section id="download">
+			<figure class="position-absolute top-0 left-0 w-100 d-none d-md-block mt-n3">
+				<svg class="fill-soft" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+					<path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z"></path>
+				</svg>
+			</figure>
+			<div class="container">
+				<div class="row row-grid align-items-center mb-5 mb-lg-7">
+					<div class="col-12 col-lg-6">
+						<h3 class="mb-2">Download App</h3>
+						<h2 class="mb-4">Get started in seconds</h2>
+						<p>Quickly connect to tools and services such as Google Analytics, Intercom or Github to track, measure and optimize performance.</p>
+						<div class="mt-4 mt-lg-5">
+							<a href="#" class="btn btn-dark btn-download-app mb-xl-0 mr-2 mr-md-3">
+								<span class="d-flex align-items-center">
+									<span class="icon icon-brand mr-2 mr-md-3">
+										<span class="fab fa-apple"></span>
+									</span>
+									<span class="d-inline-block text-left">
+										<small class="font-weight-normal d-none d-md-block">Available on</small> App Store
+									</span>
+								</span>
+							</a>
+							<a href="#" class="btn btn-dark btn-download-app">
+								<span class="d-flex align-items-center">
+									<span class="icon icon-brand mr-2 mr-md-3">
+										<span class="fab fa-google-play"></span>
+									</span> 
+									<span class="d-inline-block text-left">
+										<small class="font-weight-normal d-none d-md-block">Available on</small> Google Play
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 ml-lg-auto">
+						<img src="./resources/images/scene-3.svg" alt="" class="w-00">
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
+	<footer class="footer py-5 pt-lg-6">
+		<div class="position-fixed float-right go-to-top">
+			<a href="#home" class="btn bg-white rounded-circle shadow-sm px-2 py-1"><i class="fa fa-chevron-up fa-2x"></i></a>
+		</div>
+		<div class="container">
+			<div class="row justify-content-between border-bottom border-light">
+				<div class="col-md-4">
+					<p>Swipe is a beautiful and free one page Bootstrap 5 Template created to showcase your awesome mobile app.</p>
+					<ul class="social-platforms mb-5 list-unstyled p-0">
+						<li class="d-inline">
+							<a href="#" class="social-icon mr-3">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li class="d-inline">
+							<a href="#" class="social-icon mr-3">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li class="d-inline">
+							<a href="#" class="social-icon mr-3">
+								<i class="fa fa-github"></i>
+							</a>
+						</li>
+						<li class="d-inline">
+							<a href="#" class="social-icon">
+								<i class="fa fa-dribbble"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<p class="footer-head font-weight-bold text-dark">Themesberg</p>
+					<ul class="footer-menu list-unstyled p-0">
+						<li>
+							<a href="#" class="text-dark">Blog</a>
+						</li>
+						<li>
+							<a href="#" class="text-dark">Products</a>
+						</li>
+						<li>
+							<a href="#" class="text-dark">About Us</a>
+						</li>
+						<li>
+							<a href="#" class="text-dark">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<p class="footer-head font-weight-bold text-dark">Subscribe</p>
+					<form action="#">
+						<div class="form-row mb-2">
+							<div class="col-12">
+								<input type="email" name="email" class="form-control mb-2" placeholder="example@company.com" aria-label="Subscribe form" required>
+							</div>
+							<div class="col-12">
+								<button type="submit" class="btn btn-dark btn-block">Subscribe</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row pt-5">
+				<div class="col">
+					<a href="" class="d-flex justify-content-center">
+						<img src="./resources/images/themesberg.svg" alt="Themesberg logo" />
+					</a>
+					<div class="text-center">
+						<p class="font-weight-normal mb-0">Copyright &#169; Themesberg 2019-2021. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<!-- Bootstrap 4.6.0 CDN -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -445,6 +562,8 @@
 		integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg=="
 		crossorigin="anonymous">
 	</script>
+	<!-- Own JS -->
+	<script src="./resources/js/script.js"></script>
 </body>
 
 </html>
