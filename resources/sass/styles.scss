@@ -1,16 +1,16 @@
 // VARIABLES
-    // Typography
+// Typography
 $primary-font: 'Spartan', sans-serif;
 $default-font-size: 16px;
 
-    // Breakpoints
+// Breakpoints
 $media-breakpoint-xs :575px;
 $media-breakpoint-sm :767px;
 $media-breakpoint-md :991px;
 $media-breakpoint-lg :1199px;
 $media-breakpoint-xl :1399px;
 
-    // Colors
+// Colors
 $primary-color: #183b56;
 $secondary-color: #424767;
 $text-white: #fff;
@@ -20,7 +20,12 @@ $bg-btn-pro-hover: #fb4040;
 body {
     font: 16px/1.7 $primary-font;
 }
-    // Menu
+
+.head-color {
+    color: $primary-color;
+}
+
+// Menu
 .site-header {
     left: 0;
     right: 0;

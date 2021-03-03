@@ -2,6 +2,10 @@ body {
   font: 16px/1.7 "Spartan", sans-serif;
 }
 
+.head-color {
+  color: #183b56;
+}
+
 .site-header {
   left: 0;
   right: 0;
