@@ -16,6 +16,7 @@ $secondary-color: #424767;
 $text-white: #fff;
 $bg-btn-pro: #fc6666;
 $bg-btn-pro-hover: #fb4040;
+$btn-download-app-hover: #102638;
 
 body {
     font: 16px/1.7 $primary-font;
@@ -122,4 +123,44 @@ body {
 
 .site-banner {
     padding: 160px 0 170px;
+
+    .site-banner-head {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+    }
+
+    .site-banner-subhead {
+        font-size: clamp(1rem, 5vw, 1.25rem);
+    }
+
+    .btn-download-app {
+        background-color: $primary-color;
+        border-radius: 0.45rem;
+        color: $text-white;
+        font-weight: 500;
+        padding: 9px 12px;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: $btn-download-app-hover;
+            transition: all 0.2s ease;
+        }
+
+        .icon-brand {
+            .fa {
+                font-size: clamp(1.25rem, 2vw, 2.25rem);
+            }
+
+            img {
+                height: 25px;
+            }
+        }
+
+        .download-text {
+            font-size: clamp(0.8rem, 1vw, 1rem);
+        }
+
+        small {
+            font-size: 0.875rem;
+        }
+    }
 }

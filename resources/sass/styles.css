@@ -103,4 +103,44 @@ body {
 .site-banner {
   padding: 160px 0 170px;
 }
+
+.site-banner .site-banner-head {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.site-banner .site-banner-subhead {
+  font-size: clamp(1rem, 5vw, 1.25rem);
+}
+
+.site-banner .btn-download-app {
+  background-color: #183b56;
+  border-radius: 0.45rem;
+  color: #fff;
+  font-weight: 500;
+  padding: 9px 12px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.site-banner .btn-download-app:hover {
+  background-color: #102638;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.site-banner .btn-download-app .icon-brand .fa {
+  font-size: clamp(1.25rem, 2vw, 2.25rem);
+}
+
+.site-banner .btn-download-app .icon-brand img {
+  height: 25px;
+}
+
+.site-banner .btn-download-app .download-text {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.site-banner .btn-download-app small {
+  font-size: 0.875rem;
+}
 /*# sourceMappingURL=styles.css.map */
