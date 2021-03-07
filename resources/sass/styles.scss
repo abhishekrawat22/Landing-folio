@@ -17,6 +17,7 @@ $text-white: #fff;
 $bg-btn-pro: #fc6666;
 $bg-btn-pro-hover: #fb4040;
 $btn-download-app-hover: #102638;
+$icon-color: #418b78;
 
 body {
     font: 16px/1.7 $primary-font;
@@ -122,45 +123,74 @@ body {
 }
 
 .site-banner {
-    padding: 160px 0 170px;
+    padding: 112px 0 48px;
 
-    .site-banner-head {
-        font-size: clamp(2rem, 5vw, 3.5rem);
+    @media (min-width: ($media-breakpoint-xs + 1)) {
+        padding: 160px 0;
     }
 
-    .site-banner-subhead {
-        font-size: clamp(1rem, 5vw, 1.25rem);
-    }
+    .site-banner-text {
+        @media (min-width: ($media-breakpoint-sm + 1)) {
+            margin-bottom: 8em !important;
+        }
 
-    .btn-download-app {
-        background-color: $primary-color;
-        border-radius: 0.45rem;
-        color: $text-white;
-        font-weight: 500;
-        padding: 9px 12px;
-        transition: all 0.2s ease;
+        .site-banner-head {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+        }
 
-        &:hover {
-            background-color: $btn-download-app-hover;
+        .site-banner-subhead {
+            font-size: clamp(1rem, 4vw, 1.25rem);
+        }
+
+        .btn-download-app {
+            background-color: $primary-color;
+            border-radius: 0.45rem;
+            color: $text-white;
+            font-weight: 500;
+            padding: 9px 12px;
             transition: all 0.2s ease;
-        }
 
-        .icon-brand {
-            .fa {
-                font-size: clamp(1.25rem, 2vw, 2.25rem);
+            &:hover {
+                background-color: $btn-download-app-hover;
+                transition: all 0.2s ease;
             }
 
-            img {
-                height: 25px;
+            .icon-brand {
+                .fa {
+                    font-size: clamp(1.25rem, 2vw, 2.25rem);
+                }
+
+                img {
+                    height: 25px;
+                }
+            }
+
+            .download-text {
+                font-size: clamp(0.8rem, 1vw, 1rem);
+            }
+
+            small {
+                font-size: 0.875rem;
             }
         }
+    }
+}
 
-        .download-text {
-            font-size: clamp(0.8rem, 1vw, 1rem);
-        }
+.features {
+    .icon {
+        color: $icon-color;
+    }
 
-        small {
-            font-size: 0.875rem;
+    .features-head {
+        font-size: clamp(1rem, 3vw, 1.75rem);
+        font-weight: 500;
+    }
+
+    .card-body {
+        p {
+            color: $secondary-color;
+            font-size: 1rem;
+            font-weight: 300;
         }
     }
 }

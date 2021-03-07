@@ -101,18 +101,30 @@ body {
 }
 
 .site-banner {
-  padding: 160px 0 170px;
+  padding: 112px 0 48px;
 }
 
-.site-banner .site-banner-head {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+@media (min-width: 576px) {
+  .site-banner {
+    padding: 160px 0;
+  }
 }
 
-.site-banner .site-banner-subhead {
-  font-size: clamp(1rem, 5vw, 1.25rem);
+@media (min-width: 768px) {
+  .site-banner .site-banner-text {
+    margin-bottom: 8em !important;
+  }
 }
 
-.site-banner .btn-download-app {
+.site-banner .site-banner-text .site-banner-head {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+}
+
+.site-banner .site-banner-text .site-banner-subhead {
+  font-size: clamp(1rem, 4vw, 1.25rem);
+}
+
+.site-banner .site-banner-text .btn-download-app {
   background-color: #183b56;
   border-radius: 0.45rem;
   color: #fff;
@@ -122,25 +134,40 @@ body {
   transition: all 0.2s ease;
 }
 
-.site-banner .btn-download-app:hover {
+.site-banner .site-banner-text .btn-download-app:hover {
   background-color: #102638;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-.site-banner .btn-download-app .icon-brand .fa {
+.site-banner .site-banner-text .btn-download-app .icon-brand .fa {
   font-size: clamp(1.25rem, 2vw, 2.25rem);
 }
 
-.site-banner .btn-download-app .icon-brand img {
+.site-banner .site-banner-text .btn-download-app .icon-brand img {
   height: 25px;
 }
 
-.site-banner .btn-download-app .download-text {
+.site-banner .site-banner-text .btn-download-app .download-text {
   font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
-.site-banner .btn-download-app small {
+.site-banner .site-banner-text .btn-download-app small {
   font-size: 0.875rem;
+}
+
+.features .icon {
+  color: #418b78;
+}
+
+.features .features-head {
+  font-size: clamp(1rem, 3vw, 1.75rem);
+  font-weight: 500;
+}
+
+.features .card-body p {
+  color: #424767;
+  font-size: 1rem;
+  font-weight: 300;
 }
 /*# sourceMappingURL=styles.css.map */
