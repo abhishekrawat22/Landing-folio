@@ -143,4 +143,45 @@ body {
 .site-banner .btn-download-app small {
   font-size: 0.875rem;
 }
+
+.features .icon {
+  color: #418b78;
+}
+
+.about-swipe {
+  padding-top: 4rem;
+}
+
+.about-swipe .about-head {
+  font-size: clamp(1.375rem, 5vw, 2.5rem);
+}
+
+.about-swipe p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.about-swipe .about-head-tag {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.about-swipe .btn {
+  background-color: #183b56;
+  border-radius: 0.45rem;
+  color: #fff;
+  font-weight: 500;
+  padding: 9px 12px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.about-swipe .btn:hover {
+  background-color: #102638;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
 /*# sourceMappingURL=styles.css.map */
