@@ -171,12 +171,17 @@ body {
   font-weight: 300;
 }
 
-.about-swipe {
-  padding-top: 4rem;
+.about-head {
+  font-size: clamp(1.375rem, 5vw, 2.5rem);
 }
 
-.about-swipe .about-head {
-  font-size: clamp(1.375rem, 5vw, 2.5rem);
+.about-head-tag {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.about-swipe {
+  padding-top: 4rem;
 }
 
 .about-swipe p {
@@ -185,12 +190,11 @@ body {
   line-height: 1.6;
 }
 
-.about-swipe .about-head-tag {
-  font-size: 1.25rem;
-  font-weight: 400;
+.about-swipe .about-swipe-card {
+  padding-bottom: 8rem;
 }
 
-.about-swipe .btn {
+.about-swipe .about-swipe-card .btn {
   background-color: #183b56;
   border-radius: 0.45rem;
   color: #fff;
@@ -200,11 +204,37 @@ body {
   transition: all 0.2s ease;
 }
 
-.about-swipe .btn:hover {
+.about-swipe .about-swipe-card .btn:hover {
   background-color: #102638;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+.about-swipe .stats {
+  padding-bottom: 8rem;
+}
+
+.about-swipe .stats .card {
+  border: .0625rem solid #e5eaf4;
+}
+
+.about-swipe .stats .card h2 {
+  color: #183b56;
+  font-size: clamp(1.875rem, 5vw, 3.5rem);
+  font-weight: 500;
+}
+
+.featured-by {
+  padding-bottom: 8rem;
+}
+
+.featured-by h2 {
+  font-size: 1rem;
+}
+
+.featured-by .fa {
+  font-size: clamp(1.875rem, 5vw, 4.5rem);
 }
 /*# sourceMappingURL=styles.css.map */

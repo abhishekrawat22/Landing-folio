@@ -195,35 +195,61 @@ body {
     }
 }
 
+.about-head {
+    font-size: clamp(1.375rem, 5vw, 2.5rem);
+}
+
+.about-head-tag {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
 .about-swipe {
     padding-top: 4rem;
-    .about-head {
-        font-size: clamp(1.375rem, 5vw, 2.5rem);
-    }
-
     p {
         font-size: 1rem;
         font-weight: 300;
         line-height: 1.6;
     }
 
-    .about-head-tag {
-        font-size: 1.25rem;
-        font-weight: 400;
+    .about-swipe-card {
+        padding-bottom: 8rem;
+        .btn {
+            background-color: $primary-color;
+            border-radius: 0.45rem;
+            color: $text-white;
+            font-weight: 500;
+            padding: 9px 12px;
+            transition: all 0.2s ease;
+
+            &:hover {
+                background-color: $btn-download-app-hover;
+                transform: translateY(-3px);
+                transition: all 0.2s ease;
+            }
+        }
     }
 
-    .btn {
-        background-color: $primary-color;
-        border-radius: 0.45rem;
-        color: $text-white;
-        font-weight: 500;
-        padding: 9px 12px;
-        transition: all 0.2s ease;
-
-        &:hover {
-            background-color: $btn-download-app-hover;
-            transform: translateY(-3px);
-            transition: all 0.2s ease;
+    .stats {
+        padding-bottom: 8rem;
+        .card {
+            border: .0625rem solid #e5eaf4;
+            h2 {
+                color: $primary-color;
+                font-size: clamp(1.875rem, 5vw, 3.5rem);
+                font-weight: 500;
+            }
         }
+    }
+}
+
+.featured-by {
+    padding-bottom: 8rem;
+    h2 {
+        font-size: 1rem;
+    }
+
+    .fa {
+        font-size: clamp(1.875rem, 5vw, 4.5rem);
     }
 }
